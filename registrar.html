@@ -1,0 +1,59 @@
+<!--Página donde recojo el registro de un nuevo usuario a través de un formulario-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./img/log.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Tienda Online
+    </title>
+    <!--Link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  </head>
+  <body class="bg-info d-flex justify-content-around align-items-center vh-100 ">
+     
+    <!--Utilizo formularios para enviar la información recibida
+  por el usuario.
+  La ubicacion donde envío los datos del formulario es a registrousuario.php, por el método post-->
+    <form action="registrousuario.php" method="post">
+   
+      <div
+        class="bg-white p-5 rounded-5 text-secondary shadow-lg"
+        style="width: 25rem"
+      >
+
+ <!--Para escribir el usuario-->
+        <div class="text-center fs-1 fw-bold">Registro</div>
+        <div class="input-group mt-4">
+          
+          <input class="form-control bg-light" type="text"placeholder="usuario" name="usuario"/>
+    
+        </div>
+<!--Para escribir la contraseña-->
+        <div class="input-group mt-2">
+          <input class="form-control bg-light" type="password" placeholder="contraseña" name="contraseña"/>
+        </div>
+<!--Para escribir el nombre-->
+        <div class="input-group mt-2">
+          <input class="form-control bg-light" type="text" placeholder="nombre" name="nombre"/>
+        </div>
+<!--Para escribir el apellido-->
+        <div class="input-group mt-2">
+          <input class="form-control bg-light" type="text" placeholder="apellido" name="apellido"/>
+        </div>
+<!--Para escribir el correo-->
+         <div class="input-group mt-2">
+          <input class="form-control bg-light" type="text" placeholder="correo" name="correo"/>
+        </div>
+<!--Botón login, y para poder registrarse-->
+      <input class="form-control bg-primary fw-bold" name="boton"  class="btn" type="submit" value="Registrar">
+        <div>
+         <!--Enlace para una vez registrado volver al inicio de sesión-->
+          <a href="login.html" class="text-decoration-none text-black  fs-6 ">Iniciar Sesión</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

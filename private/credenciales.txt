@@ -1,0 +1,5 @@
+localhost
+root
+usuario
+logging
+3307
