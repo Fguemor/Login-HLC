@@ -4,7 +4,7 @@ session_start();
     //si no está pulsado el botón recordar de la página login de nuestra empresa
     if( !isset($_SESSION["recordar"])){
     // Establecer tiempo de vida de la sesión en segundos
-        $inactividad = 10;
+        $inactividad = 60;
         // Comprobar si $_SESSION["timeout"] está establecida
         if(isset($_SESSION["timeout"])){
             // Calcular el tiempo de vida de la sesión (TTL = Time To Live)
