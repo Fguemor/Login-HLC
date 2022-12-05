@@ -1,4 +1,4 @@
-<!--Clase donde nos redirije a poder actualizar los datos del usuario-->
+<!--Nos redirije a poder actualizar los datos del usuario-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
