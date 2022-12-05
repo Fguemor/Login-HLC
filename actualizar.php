@@ -1,4 +1,4 @@
-<!--Clase donde actualizo los datos del usuario->
+<!--Actualizo los datos del usuario->
 <?php
 include ("sesion.php");
 //recojo el nombre del usuario
